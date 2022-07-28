@@ -38,7 +38,7 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: build und Deploy frontend
+          name: build and Deploy frontend
           # TODO: install, build, deploy frontend
           command: |
             npm run frontend:deploy
@@ -49,7 +49,7 @@ jobs:
           command: |
             npm run ebInit && npm run ebPass
       - run:
-          name: build und Deploy backend
+          name: build and Deploy backend
           # TODO: install, build, deploy backend
           command: |
             npm run api:deploy
